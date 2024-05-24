@@ -235,7 +235,7 @@
                                 </div>
                                 <div class="provider">
                                     <div class="thumb">
-                                        <img src="assets/img/800x800.png" alt="Image Not Found">
+                                        <img src="assets/img/amina.jpg" class="profile-picture" alt="Image Not Found">
                                         <div class="quote">
                                             <img src="assets/img/shape/quote.png" alt="Image Not Found">
                                         </div>
@@ -267,7 +267,7 @@
                                 </div>
                                 <div class="provider">
                                     <div class="thumb">
-                                        <img src="assets/img/800x800.png" alt="Image Not Found">
+                                        <img src="assets/img/benali.jpg" class="profile-picture" alt="Image Not Found">
                                         <div class="quote">
                                             <img src="assets/img/shape/quote.png" alt="Image Not Found">
                                         </div>
@@ -299,7 +299,7 @@
                                 </div>
                                 <div class="provider">
                                     <div class="thumb">
-                                        <img src="assets/img/800x800.png" alt="Image Not Found">
+                                        <img src="assets/img/fatima.jpg" class="profile-picture" alt="Image Not Found">
                                         <div class="quote">
                                             <img src="assets/img/shape/quote.png" alt="Image Not Found">
                                         </div>
@@ -327,31 +327,63 @@
 <!-- end consultation -->
 
 <!-- Consultation Form -->
-<div class="consultation-form">
+<div class="contact-area overflow-hidden bg-gray default-padding">
+    <div class="sahpe-right-bottom">
+        <img src="assets/img/shape/16.png" alt="Image Not Found">
+    </div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="consultation-form-inner text-center">
-                    <h3>Request a Consultation</h3>
-                    <p>Fill out the form below to schedule a consultation with our experts.</p>
-                    <form action="#" method="POST">
+        <div class="row align-center">
+            
+            <div class="col-tact-stye-one col-xl-6 col-lg-7">
+                <div class="contact-form-style-one mb-md-50">
+                    <img src="assets/img/illustration/10.png" alt="Image Not Found">
+                    <h5 class="sub-title">Have a Consultation?</h5>
+                    <h2 class="heading">Send it to us</h2>
+                    <form action="assets/mail/contact.php" method="POST" class="contact-form contact-form">
                         <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" name="name" placeholder="Your Name" required>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                                    <span class="alert-error"></span>
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                                    <span class="alert-error"></span>
+                                </div>
                             </div>
-                            <div class="col-md-12">
-                                <textarea name="message" placeholder="Your Message" required></textarea>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
+                                    <span class="alert-error"></span>
+                                </div>
                             </div>
-                            <div class="col-md-12">
-                                <button type="submit">Submit</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group comments">
+                                    <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About your consultation"></textarea>
+                                </div>
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="submit" name="submit" id="submit">
+                                    <i class="fa fa-paper-plane"></i> Get in Touch
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Alert Message -->
+                        <div class="col-lg-12 alert-notification">
+                            <div id="message" class="alert-msg"></div>
                         </div>
                     </form>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
